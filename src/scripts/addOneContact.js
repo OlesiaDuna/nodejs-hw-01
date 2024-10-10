@@ -1,3 +1,7 @@
-export const addOneContact = async () => {};
+import { generateContacts } from './generateContacts.js';
 
-addOneContact();
+export const addOneContact = async () => {
+  await generateContacts();
+};
+
+addOneContact(1);
